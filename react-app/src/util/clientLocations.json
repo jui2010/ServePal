@@ -5,7 +5,8 @@
 	  "long": 13.390264,
 	  "address": "East Water Street",
 	  "skill": "Service",
-	  "served": true
+	  "served": true,
+	  "time" : "3 p.m."
 	},
 	{
 	  "name": "Olivia",
@@ -13,7 +14,8 @@
 	  "long": 13.387855,
 	  "address": "Water Street Bagel",
 	  "skill": "Installation",
-	  "served": true
+	  "served": true,
+	  "time" : "3 p.m."
 	},
 	{
 	  "name": "Ava",
@@ -21,7 +23,8 @@
 	  "long": 13.396959,
 	  "address": "South Warren Street",
 	  "skill": "Service",
-	  "served": true
+	  "served": true,
+	  "time" : "3 p.m."
 	},
 	{
 	  "name": "Michael",
@@ -29,7 +32,8 @@
 	  "long": 13.392151,
 	  "address": "East Fayette Street",
 	  "skill": "Service",
-	  "served": true
+	  "served": true,
+	  "time" : "3 p.m."
 	},
 	{
 	  "name": "Ethan",
@@ -37,7 +41,8 @@
 	  "long": 13.387685,
 	  "address": "South Crouse Avenue",
 	  "skill": "Installation",
-	  "served": false
+	  "served": true,
+	  "time" : "1 p.m."
 	},
 	{
 	  "name": "Alexander",
@@ -45,7 +50,8 @@
 	  "long": 13.39198,
 	  "address": "University Avenue",
 	  "skill": "Service",
-	  "served": true
+	  "served": true,
+	  "time" : "3 p.m."
 	},
 	{
 	  "name": "Chloe",
@@ -53,7 +59,8 @@
 	  "long": 13.383691,
 	  "address": "Harrison Street",
 	  "skill": "Installation",
-	  "served": true
+	  "served": true,
+	  "time" : "3 p.m."
 	},
 	{
 	  "name": "Elizabeth",
@@ -61,7 +68,8 @@
 	  "long": 13.38017,
 	  "address": "East Adams Street",
 	  "skill": "Service",
-	  "served": true
+	  "served": true,
+	  "time" : "3 p.m."
 	},
 	{
 	  "name": "Elijah",
@@ -69,7 +77,8 @@
 	  "long": 13.383734,
 	  "address": "West Palm Avenue",
 	  "skill": "Installation",
-	  "served": true
+	  "served": true,
+	  "time" : "3 p.m."
 	},
 	{
 	  "name": "Joshua",
@@ -77,7 +86,8 @@
 	  "long": 13.38386,
 	  "address": "Suncity Road",
 	  "skill": "Service",
-	  "served": false
+	  "served": true,
+	  "time" : "3 p.m."
 	},
 	{
 	  "name": "Addison",
@@ -85,7 +95,8 @@
 	  "long": 13.408968,
 	  "address": "Evershine Road",
 	  "skill": "Installation",
-	  "served": true
+	  "served": true,
+	  "time" : "3 p.m."
 	},
 	{
 	  "name": "Natalie",
@@ -93,6 +104,7 @@
 	  "long": 13.396945,
 	  "address": "5th Avenue Road",
 	  "skill": "Service",
-	  "served": true
+	  "served": true,
+	  "time" : "3 p.m."
 	}
   ]

@@ -1,6 +1,12 @@
 import React, { Component , Fragment} from 'react'
 import withStyles from '@material-ui/core/styles/withStyles'
 import Leaflet from 'leaflet'
+
+import Button from '@material-ui/core/Button'
+import Snackbar from '@material-ui/core/Snackbar'
+import IconButton from '@material-ui/core/IconButton'
+import CloseIcon from '@material-ui/icons/Close'
+
 import { Map, TileLayer, Marker , Popup} from 'react-leaflet'
 
 import {connect} from 'react-redux'
@@ -43,7 +49,8 @@ class MapSection extends Component {
   state = {
     lat: 52.49953,
     lng: 13.390264,
-    name : ''
+    name : '',
+    open: false
   }
 
   handleClick = (clientLocation) => {
@@ -109,6 +116,12 @@ class MapSection extends Component {
     )
   }
 
+  handleSnackBar = () => {
+    this.setState({
+      open : true
+    })
+  }
+
   render() {
     return (
       <Fragment>
@@ -131,7 +144,30 @@ class MapSection extends Component {
           {this.showTechnicians()}
 
         </Map>
-      </Fragment>
+
+
+
+        <Button onClick={this.handleSnackBar} style={{color : 'white'}}>click</Button>
+        <Snackbar
+          anchorOrigin={{
+            vertical: 'bottom',
+            horizontal: 'left',
+          }}
+          open={this.state.open}
+          autoHideDuration={6000}
+          message="Jake Murphy is unavailable at job location for client : @Olivia"
+          action={
+            <Fragment>
+              <Button color="secondary" size="small" >
+                OK
+              </Button>
+              <IconButton size="small" aria-label="close" color="inherit">
+                <CloseIcon fontSize="small" />
+              </IconButton>
+            </Fragment>
+            }
+            />
+        </Fragment>
     )
   }
 }

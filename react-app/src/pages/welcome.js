@@ -42,7 +42,7 @@ class welcome extends Component {
                     <Zoom in={true} style={{ transitionDelay: '500ms' }}>
                         <Paper elevation={4} className={classes.paper} > 
                             <div style={{fontSize:"50px", lineHeight : '20px', paddingTop : '100px'}}>
-                                Find field services with<br/>
+                                Find field service recommendations with
                             </div>
                             <div style={{fontSize:"100px" ,marginLeft : this.state.curTime === 4 | this.state.curTime === 6 | this.state.curTime === 8  ? '5px' :'0px', textShadow: this.state.curTime === 4 | this.state.curTime === 6 | this.state.curTime === 8  ? '2px 2px #62727b' : '' , color: this.state.curTime === 4 | this.state.curTime === 6 | this.state.curTime === 8  ? '#e3e3e3' : '' }}>
                                 Serve Pal<span style={{color: '#ffa000' , fontSize: '200px', fontFamily: 'Hind'}}>.</span>

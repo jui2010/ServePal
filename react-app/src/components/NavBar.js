@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button'
 import withStyles from '@material-ui/core/styles/withStyles'
 import HomeIcon from '@material-ui/icons/Home'
 import CameraIcon from '@material-ui/icons/Camera'
+import Avatar from '@material-ui/core/Avatar'
 
 import { Link } from 'react-router-dom'
 
@@ -44,7 +45,14 @@ const styles = (theme) => ({
     },
     icon : {
         fontSize : '40px',
-    }
+    },
+    avatar: {
+        fontSize : '25px',
+        fontFamily: 'Bebas Neue',
+        width: theme.spacing(5),
+        height: theme.spacing(5),
+        marginRight : '15px'
+    },
 })
 
 
@@ -53,10 +61,19 @@ const NavBar = (props) => {
     const { classes } = props
 
     const {
-        user,
-        isAuthenticated,
+        // user,
+        // isAuthenticated,
         loginWithRedirect
     } = useAuth0();
+
+    const isAuthenticated = true
+    const user = {
+        firstName:"Jui",
+        lastName:"Thombre",
+        picture:"https://lh3.googleusercontent.com/a-/AOh14GgN7FFpwiW9NW9vvhqax-tyoBY6eVrCUI2BkU0oRr0",
+        email:"jui20oct@gmail.com",
+        username:"jui20oct"
+    }
 
     if(isAuthenticated){
         store.dispatch({type : SET_AUTHENTICATED})
@@ -89,22 +106,24 @@ const NavBar = (props) => {
                         </Button>)}
 
                     {/* home */}
-                    {isAuthenticated && ( 
+                    {/* {isAuthenticated && (  */}
                         <Tooltip title="Home" >
                             <Button color="primary" component = {Link} to="/home" >
                                 <HomeIcon/>
                             </Button>
                         </Tooltip>
-                    )}
+                    {/* )} */}
 
                     {/* profile pic */}
-                    {isAuthenticated && ( 
+                    {/* {isAuthenticated && (  */}
                         <Tooltip title="Profile" >
-                            <Button color="primary" component = {Link} to="/profile" className={classes.profileB}  >
+                            {/* <Button color="primary" component = {Link} to="/profile" className={classes.profileB}  >
                                 <img className={classes.profile} src={user.picture}  alt="Profile"/>
-                            </Button>
+                            </Button> */}
+
+                            <Avatar className={classes.avatar} className={classes.avatar}>JM</Avatar>
                         </Tooltip>
-                    )}
+                    {/* )} */}
                 </Toolbar>
             </AppBar>
         </div>

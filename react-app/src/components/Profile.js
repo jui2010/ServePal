@@ -2,6 +2,8 @@ import React, { Component , Fragment} from 'react'
 import withStyles from '@material-ui/core/styles/withStyles'
 import Avatar from '@material-ui/core/Avatar'
 import Grid from '@material-ui/core/Grid'
+import Button from '@material-ui/core/Button'
+import TextField from '@material-ui/core/TextField'
 
 import tasks from '../util/tasks.json'
 
@@ -45,6 +47,12 @@ const styles = (theme) => ({
     },
     gen : {
         paddingLeft: '15px',
+    },
+    button: {
+        fontFamily:  'Bebas Neue',
+        fontSize : '22px',
+        backgroundColor: '#1a237e',
+        color: 'white'
     }
 })
 
@@ -125,6 +133,13 @@ class Profile extends Component {
 
                 <Grid container item sm={12} className={classes.nameDiv} >                  
                     {this.getTaskDescription()}          
+                </Grid>
+                
+                <Grid container item sm={12} className={classes.nameDiv} >                  
+                    <TextField id="outlined-basic" variant="outlined" multiline rowsMax={4} style={{width: '355px'}}/>
+                    <Button className={classes.button}>
+                        Send Message
+                    </Button>          
                 </Grid>
                 
             </Grid>

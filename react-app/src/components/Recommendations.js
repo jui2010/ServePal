@@ -152,6 +152,20 @@ export class Recommendations extends Component {
                         </div>
                     </Grid>
 
+                    {/* address */}
+                    <Grid item sm={12}  className ={classes.section} style={{border: '1px solid black'}}>
+                        <div className ={classes.address} >
+                            Time : {clientLocation.time}
+                        </div>
+                    </Grid>
+
+                    {/* address */}
+                    <Grid item sm={12}  className ={classes.section} style={{border: '1px solid black'}}>
+                        <div className ={classes.address} >
+                            Skill Required : {clientLocation.skill}
+                        </div>
+                    </Grid>
+
                     {/* showing technician info */}
                     {this.showRecommendations()}
                 </Fragment>
