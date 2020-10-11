@@ -1,4 +1,4 @@
-import {SET_AUTHENTICATED_USER, SET_AUTHENTICATED, SET_UNAUTHENTICATED } from '../types'
+import {SET_AUTHENTICATED_USER, SET_AUTHENTICATED, SET_UNAUTHENTICATED,SET_TECHNICIAN } from '../types'
 
 const initialState = {
     authenticatedUser : {
@@ -9,6 +9,7 @@ const initialState = {
         email:"jui20oct@gmail.com",
         username:"jui20oct",
     },
+    technician : {},
     authenticated : false,
     loading : false
 }
@@ -33,6 +34,12 @@ export default function(state = initialState , action){
                 ...state,
                 loading : false,
                 authenticatedUser : action.payload
+            } 
+
+        case SET_TECHNICIAN :
+            return {
+                ...state,
+                technician : action.payload
             } 
 
         default : 

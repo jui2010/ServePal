@@ -2,7 +2,8 @@ import React, { Component, Fragment} from 'react'
 import Grid from '@material-ui/core/Grid'
 import Paper from '@material-ui/core/Paper'
 import Avatar from '@material-ui/core/Avatar'
-
+import {Link } from 'react-router-dom'
+import MuiLink from '@material-ui/core/Link'
 import LocationOnIcon from '@material-ui/icons/LocationOn'
 
 import withStyles from '@material-ui/core/styles/withStyles'
@@ -73,7 +74,9 @@ export class Recommendations extends Component {
                         {rec.firstName} {rec.lastName}
                     </div>
                     <div className={classes.usernameDiv}>
-                    @{rec.username}
+                        <MuiLink component ={Link} to ={ `/${rec.username}`} className={classes.username} >
+                            @{rec.username} 
+                        </MuiLink>
                     </div>
 
                     <div className={classes.emailDiv} >
