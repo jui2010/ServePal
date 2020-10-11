@@ -27,7 +27,7 @@ In order to build the web application, I used the following technologies:
 ## Accomplishments that I'm proud of
 I was able to demonstrate a minimum viable product in a short time span.
 
-## What's next for Easy Park
+## What's next for Serve Pal
 The functionalities I wish to inculcate:
 
 - Add the schedule of the technicians, so that the admin can easily view which tasks should be assigned to whom
