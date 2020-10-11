@@ -8,3 +8,4 @@ export const SET_TECHNICIAN = 'SET_TECHNICIAN'
 
 //data reducer types
 export const SET_CLIENT_LOCATION = 'SET_CLIENT_LOCATION' 
+export const SET_TECHNICIAN_LATLONG = 'SET_TECHNICIAN_LATLONG' 

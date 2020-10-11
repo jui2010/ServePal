@@ -1,6 +1,7 @@
 import React, { Component, Fragment} from 'react'
 import Grid from '@material-ui/core/Grid'
 import Paper from '@material-ui/core/Paper'
+import Button from '@material-ui/core/Button'
 import Avatar from '@material-ui/core/Avatar'
 import {Link } from 'react-router-dom'
 import MuiLink from '@material-ui/core/Link'
@@ -16,7 +17,7 @@ const styles = (theme) => ({
   ...theme.spread,
   section : {
     fontFamily: 'Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif',
-    fontSize: '20px'
+    fontSize: '20px',
   },
   heading : {
     fontFamily: 'Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif',
@@ -45,6 +46,23 @@ const styles = (theme) => ({
   },
   total : {
     fontSize : '30px',
+  },
+  paper : {
+      padding : '20px',
+      width : '120px',
+      height: '160px'
+  },
+  rec : {
+      marginTop : '30px'
+  },
+  nameDiv:{
+      fontWeight: 'bold'
+  },
+  wip : {
+    fontFamily: 'Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif',
+    fontSize : '15px',
+    fontWeight : 'bold',
+    backgroundColor: '#80e27e'
   }
 })
 
@@ -60,34 +78,41 @@ export class Recommendations extends Component {
         const {classes} = this.props
         const {clientLocation} = this.props.data
         var rows = recommendations.reduce((rows, rec) => {
-          if (rec.clientName === clientLocation.name) {
-            rows.push(
-                <Grid container item sm={4} >
-                    <Paper elevation={3}>
-                    <div className={classes.imgDiv}>
-                    <Avatar >
-                        {rec.firstName.toString().charAt(0)}{rec.lastName.toString().charAt(0)}
-                    </Avatar>
-                    </div>
+            if (rec.clientName === clientLocation.name) {
+                rows.push(
+                    <Grid container item sm={4} className={classes.rec} >
+                        <Paper elevation={3} className={classes.paper} >
+                        <div className={classes.imgDiv}>
+                        <Avatar >
+                            {rec.firstName.toString().charAt(0)}{rec.lastName.toString().charAt(0)}
+                        </Avatar>
+                        </div>
 
-                    <div className={classes.nameDiv}>
-                        {rec.firstName} {rec.lastName}
-                    </div>
-                    <div className={classes.usernameDiv}>
-                        <MuiLink component ={Link} to ={ `/${rec.username}`} className={classes.username} >
-                            @{rec.username} 
-                        </MuiLink>
-                    </div>
+                        <div className={classes.nameDiv}>
+                            {rec.firstName} {rec.lastName}
+                        </div>
+                        <div className={classes.usernameDiv}>
+                            <MuiLink component ={Link} to ={ `/${rec.username}`} className={classes.username} >
+                                @{rec.username} 
+                            </MuiLink>
+                        </div>
 
-                    <div className={classes.emailDiv} >
-                        {rec.skill}
-                    </div> 
+                        <div >
+                            {rec.skill}
+                        </div> 
 
+                        {rec.served &&
+                        <div className={classes.wip} >
+                            <div style={{fontSize : '12px', padding : '5px', marginTop : '20px'}}>
+                                Work in progress
+                            </div>
+                        </div> 
+                        }
 
-                    </Paper>
-                </Grid>
-            )
-          } 
+                        </Paper>
+                    </Grid>
+                )
+            } 
           return rows
         }, [])
     
@@ -116,7 +141,7 @@ export class Recommendations extends Component {
                     {/* name */}
                     <Grid item sm={12} className ={classes.section} style={{border: '1px solid black'}}>
                         <div className ={classes.name} >
-                            {clientLocation.name}'s location
+                            Client Name: {clientLocation.name}
                         </div>
                     </Grid>
 
@@ -126,45 +151,6 @@ export class Recommendations extends Component {
                             <LocationOnIcon/> [{clientLocation.address}]
                         </div>
                     </Grid>
-
-                    {/* owners name */}
-                    <Grid item sm={12}  className ={classes.section} style={{border: '1px solid black'}}>
-                        Hosted by <b>@{clientLocation.name}</b>
-                    </Grid>
-
-                    {/* availability  */}
-                    {/* <Grid item sm={12}  className ={classes.section} style={{border: '1px solid black'}}>
-                        Available from 
-                        <b> {clientLocation.startTime}</b> to 
-                        <b> {clientLocation.endTime}</b>
-                    </Grid> */}
-
-                    {/* price  */}
-                    {/* <Grid item sm={12}  className ={classes.section} style={{border: '1px solid black'}}>
-                        Rate (per hour) :
-                        <b> ${clientLocation.cost}</b>
-                    </Grid> */}
-
-                    {/* book */}
-                    {/* <Grid container item sm={12}  className ={classes.section} style={{border: '1px solid black'}}> */}
-                        {/* <Grid container item sm={4} >
-                            <Paper elevation={3}>
-                            <Avatar >
-                                B
-                            </Avatar>
-                            </Paper>
-                        </Grid>
-                        <Grid container item sm={4} >
-                        <div className ={classes.bookslot} >
-                            Book the parking spot
-                        </div>
-                        </Grid>
-                        <Grid container item sm={4} >
-                        <div className ={classes.bookslot} >
-                            Book the parking spot
-                        </div>
-                        </Grid> */}
-                    {/* </Grid> */}
 
                     {/* showing technician info */}
                     {this.showRecommendations()}

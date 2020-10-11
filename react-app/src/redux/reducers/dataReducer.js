@@ -1,7 +1,8 @@
-import {SET_CLIENT_LOCATION} from '../types'
+import {SET_CLIENT_LOCATION, SET_TECHNICIAN_LATLONG} from '../types'
 
 const initialState = {
-    clientLocation: {}
+    clientLocation: {},
+    technicianLatLong : {}
 }
 
 export default function (state = initialState, action){
@@ -10,6 +11,12 @@ export default function (state = initialState, action){
         return {
             ...state,
             clientLocation : action.payload
+        }
+
+    case SET_TECHNICIAN_LATLONG : 
+        return {
+            ...state,
+            technicianLatLong : action.payload
         }
 
     default : 

@@ -1,20 +1,38 @@
 [
-    {
-      "username": "JakeMurphy",
-      "lat": 52.498477,
-      "long": 13.3851283,
-      "task": 1
-    },
-    {
-      "username": "JakeMurphy",
-      "lat": 52.49749,
-      "long": 13.3806783,
-      "task": 2
-    },
-    {
-      "username": "JakeMurphy",
-      "lat": 52.496558,
-      "long": 13.3875873,
-      "task": 3
-    }
+  {
+    "username": "JakeMurphy",
+    "lat": 52.498477,
+    "long": 13.3851283,
+    "task": 1,
+    "description": "task1",
+    "time": "10 a.m.",
+    "clientName": "Olivia",
+    "skill": "Installation",
+    "efficiency": 1.1,
+    "clientAddress": "Water Street Bagel"
+  },
+  {
+    "username": "JakeMurphy",
+    "lat": 52.49749,
+    "long": 13.3806783,
+    "task": 2,
+    "description": "task2",
+    "time": "12 p.m.",
+    "clientName": "Ava",
+    "skill": "Installation",
+    "efficiency": 1.1,
+    "clientAddress": "South Warren Street"
+  },
+  {
+    "username": "JakeMurphy",
+    "lat": 52.496558,
+    "long": 13.3875873,
+    "task": 3,
+    "description": "task3",
+    "time": "2 p.m.",
+    "clientName": "Elijah",
+    "skill": "Installation",
+    "efficiency": 1.1,
+    "clientAddress": "West Palm Avenue"
+  }
 ]

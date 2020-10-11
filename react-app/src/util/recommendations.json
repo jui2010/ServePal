@@ -71,7 +71,7 @@
     "lastName": "Harper",
     "username": "JimHarper",
     "rank": 1,
-    "served": true,
+    "served": false,
     "lat": "",
     "long": "",
     "skill": "Installation"
@@ -104,7 +104,7 @@
     "lastName": "Green",
     "username": "MarkGreen",
     "rank": 1,
-    "served": false,
+    "served": true,
     "lat": "",
     "long": "",
     "skill": "Installation"

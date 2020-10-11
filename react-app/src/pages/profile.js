@@ -40,9 +40,7 @@ export class user extends Component {
                 </Grid>
 
                 <Grid item sm={5} className ={classes.section} style={{border: '1px solid black'}}>
-                    <div className={classes.mainDiv}>
-                        <Profile/>
-                    </div>
+                    <Profile/>
                 </Grid>
                 
             </Grid>
