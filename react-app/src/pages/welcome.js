@@ -45,7 +45,7 @@ class welcome extends Component {
                                 Find field services with<br/>
                             </div>
                             <div style={{fontSize:"100px" ,marginLeft : this.state.curTime === 4 | this.state.curTime === 6 | this.state.curTime === 8  ? '5px' :'0px', textShadow: this.state.curTime === 4 | this.state.curTime === 6 | this.state.curTime === 8  ? '2px 2px #62727b' : '' , color: this.state.curTime === 4 | this.state.curTime === 6 | this.state.curTime === 8  ? '#e3e3e3' : '' }}>
-                                The Recommender Pal
+                                Serve Pal<span style={{color: '#ffa000' , fontSize: '200px', fontFamily: 'Hind'}}>.</span>
                             </div>
                             <div  style={{fontSize:"40px"}}></div><br />
                             <Button  variant="contained" color ="secondary" style={{ marginBottom : '50px'}} component = {Link} to="/signup">

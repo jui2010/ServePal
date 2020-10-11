@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid'
 import MapSection from '../components/MapSection'
 
 import {connect} from 'react-redux'
+import Recommendations from '../components/Recommendations'
 
 const styles = (theme) => ({
     ...theme.spread,
@@ -27,7 +28,7 @@ class home extends Component {
             <Grid container style={{border: '1px solid black'}}>
                 <Grid item sm={5} className ={classes.section} style={{border: '1px solid black'}}>
                     <div className={classes.mainDiv}>
-
+                        <Recommendations/>
                     </div>
                 </Grid>
                 

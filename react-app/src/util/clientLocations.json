@@ -3,72 +3,96 @@
 	  "name": "Emma",
 	  "lat": 52.49953,
 	  "long": 13.390264,
-	  "address": 1
+	  "address": 1,
+	  "skill": "Service",
+	  "served": true
 	},
 	{
 	  "name": "Olivia",
 	  "lat": 52.498772,
 	  "long": 13.387855,
-	  "address": 2
+	  "address": 2,
+	  "skill": "Installation",
+	  "served": true
 	},
 	{
 	  "name": "Ava",
 	  "lat": 52.499347,
 	  "long": 13.396959,
-	  "address": 3
+	  "address": 3,
+	  "skill": "Service",
+	  "served": true
 	},
 	{
 	  "name": "Michael",
 	  "lat": 52.50128,
 	  "long": 13.392151,
-	  "address": 4
+	  "address": 4,
+	  "skill": "Service",
+	  "served": true
 	},
 	{
 	  "name": "Ethan",
 	  "lat": 52.502508,
 	  "long": 13.387685,
-	  "address": 5
+	  "address": 5,
+	  "skill": "Installation",
+	  "served": false
 	},
 	{
 	  "name": "Alexander",
 	  "lat": 52.502325,
 	  "long": 13.39198,
-	  "address": 6
+	  "address": 6,
+	  "skill": "Service",
+	  "served": true
 	},
 	{
 	  "name": "Chloe",
 	  "lat": 52.502377,
 	  "long": 13.383691,
-	  "address": 7
+	  "address": 7,
+	  "skill": "Installation",
+	  "served": true
 	},
 	{
 	  "name": "Elizabeth",
 	  "lat": 52.499843,
 	  "long": 13.38017,
-	  "address": 8
+	  "address": 8,
+	  "skill": "Service",
+	  "served": true
 	},
 	{
 	  "name": "Elijah",
 	  "lat": 52.497074,
 	  "long": 13.383734,
-	  "address": 9
+	  "address": 9,
+	  "skill": "Installation",
+	  "served": true
 	},
 	{
 	  "name": "Joshua",
 	  "lat": 52.494278,
 	  "long": 13.38386,
-	  "address": 10
+	  "address": 10,
+	  "skill": "Service",
+	  "served": false
 	},
 	{
 	  "name": "Addison",
 	  "lat": 52.503788,
 	  "long": 13.408968,
-	  "address": 11
+	  "address": 11,
+	  "skill": "Installation",
+	  "served": true
 	},
 	{
 	  "name": "Natalie",
 	  "lat": 52.504049,
 	  "long": 13.396945,
-	  "address": 12
+	  "address": 12,
+	  "skill": "Service",
+	  "served": true
 	}
   ]

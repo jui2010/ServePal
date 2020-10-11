@@ -6,3 +6,4 @@ export const SET_UNAUTHENTICATED = 'SET_UNAUTHENTICATED'
 //ui reducer types
 
 //data reducer types
+export const SET_CLIENT_LOCATION = 'SET_CLIENT_LOCATION' 

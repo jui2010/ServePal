@@ -1,0 +1,74 @@
+[
+    {
+      "firstName": "Jake",
+      "lastName": "Murphy",
+      "username": "JakeMurphy",
+      "skill": "Installation",
+      "lat": 52.499477,
+      "long": 13.3851083
+    },
+    {
+      "firstName": "Justin",
+      "lastName": "Truce",
+      "username": "JustinTruce",
+      "skill": "Installation",
+      "lat": 52.49949,
+      "long": 13.3806983
+    },
+    {
+      "firstName": "Mark",
+      "lastName": "Green",
+      "username": "MarkGreen",
+      "skill": "Installation",
+      "lat": 52.496858,
+      "long": 13.3875973
+    },
+    {
+      "firstName": "Steven",
+      "lastName": "Beaver",
+      "username": "StevenBeaver",
+      "skill": "Service",
+      "lat": "",
+      "long": ""
+    },
+    {
+      "firstName": "Blake",
+      "lastName": "Johnson",
+      "username": "BlakeJohnson",
+      "skill": "Service",
+      "lat": "",
+      "long": ""
+    },
+    {
+      "firstName": "Jim",
+      "lastName": "Harper",
+      "username": "JimHarper",
+      "skill": "Installation",
+      "lat": "",
+      "long": ""
+    },
+    {
+      "firstName": "Micheal",
+      "lastName": "Ashley",
+      "username": "MichealAshley",
+      "skill": "Installation",
+      "lat": "",
+      "long": ""
+    },
+    {
+      "firstName": "Swain",
+      "lastName": "Luther",
+      "username": "SwainLuther",
+      "skill": "Installation",
+      "lat": "",
+      "long": ""
+    },
+    {
+      "firstName": "Shaun",
+      "lastName": "King",
+      "username": "ShaunKing",
+      "skill": "Installation",
+      "lat": "",
+      "long": ""
+    }
+  ]

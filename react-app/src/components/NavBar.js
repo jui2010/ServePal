@@ -72,7 +72,7 @@ const NavBar = (props) => {
 
                     {/* servePal title */}
                     <div className={classes.servePal}>
-                        Serve Pal 
+                    &nbsp;&nbsp;Serve Pal &nbsp;<span style={{color: '#ffa000' , fontSize: '50px', fontFamily: 'Hind'}}>.</span>
                     </div>
 
                     {/* login */}
