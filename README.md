@@ -1,4 +1,4 @@
-##Introduction
+## Introduction
 ServePal is a web app built to recommend technicians of various skillsets to the client facing certain problem, based on factors like efficiency, distance from the clients location, priority, etc.
 
 ## What it does
